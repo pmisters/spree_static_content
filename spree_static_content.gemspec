@@ -61,7 +61,7 @@ Gem::Specification.new do |s|
     "spec/spec_helper.rb",
     "spree_static_content.gemspec"
   ]
-  s.homepage = %q{http://github.com/spree/spree-static-content}
+  s.homepage = %q{http://github.com/pmisters/spree-static-content}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.6.2}
   s.summary = %q{Extention to manage the static pages for your Spree shop.}
@@ -73,15 +73,18 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<spree_core>, [">= 0.60.0"])
       s.add_runtime_dependency(%q<spree_editor>, [">= 0.50.0"])
       s.add_runtime_dependency(%q<formtastic>, ["~> 1.2.3"])
+      s.add_runtime_dependency(%q<deface>, [">= 0.6.1"])
     else
       s.add_dependency(%q<spree_core>, [">= 0.60.0"])
       s.add_dependency(%q<spree_editor>, [">= 0.50.0"])
       s.add_dependency(%q<formtastic>, ["~> 1.2.3"])
+      s.add_dependency(%q<deface>, [">= 0.6.1"])
     end
   else
     s.add_dependency(%q<spree_core>, [">= 0.60.0"])
     s.add_dependency(%q<spree_editor>, [">= 0.50.0"])
     s.add_dependency(%q<formtastic>, ["~> 1.2.3"])
+    s.add_dependency(%q<deface>, [">= 0.6.1"])
   end
 end
 
